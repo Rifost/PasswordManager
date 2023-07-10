@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Password Manager</title>
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="header-logo">
+                <h1>PM |</h1>
+            </div>
+
+            <div class="header-buttons">
+                <ul>
+                    <li><a href="/index.html">Главная</a></li>
+                    <li><a href="./about.html">Описание</a></li>
+                    <li><a href="./passwords.html">Пароли</a></li>
+                    <li><a href="https://github.com/Rifost/PasswordManager">Репозиторий</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <form>
+        <p><b>Пароль </b><input id="password" type="text" size="60"></p>
+        <p><b>Описание </b><input id="password-about" type="text" size="60"></p>
+
+        <button class="save" type="button" onclick="save_password()">Сохранить</button>
+        <button class="gen" type="button" onclick="gen_password();">Сгенерировать</button>
+        <button class="clear" type="button" onclick="clear_password();">Очистить</button>
+        <b>Длина пароля </b><input id="password-length" type="range" min="8" max="20" step="1">
+    </form>
+    <script src="js/passwords.js"></script>
+</body>
+</html>

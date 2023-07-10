@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(20, 19, 19, 0.89);
+    font-family: 'Roboto Mono', monospace;
+}
+
+p {
+    margin: 30px;
+}
+
+button {
+    margin: 15px;
+    margin-left: 80px;
+    border: 0;
+    border-radius: 7px;
+    background: darkorchid;
+    padding: 6px 12px;
+    color: black;
+}
+
+#password, #password-about {
+    background-color: rgba(32, 30, 30, 0.719);
+    color: azure;
+    border-radius: 7px;
+    outline: none;
+}
+
+#password-length {
+    background: darkorchid;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 7px;
+}
+
+#password-length::-webkit-slider-thumb {
+    background: azure;
+    border-radius: 10px;
+    cursor: pointer;
+    appearance: none;
+    width:15px;
+    height: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+input:hover {
+    height: 16px;
+}
+
+.header-logo {
+    margin-left: 50px;
+    color: darkorchid;
+}
+
+.header-wrap {
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    height: 60px;
+    background-color: black;
+    box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.3);;
+}
+
+.header-buttons ul {
+    list-style: none;
+}
+
+.header-buttons li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header-buttons a {
+    color: azure;
+    text-decoration: none;
+}
+
+.header-buttons a:hover {
+    text-decoration: overline;
+}
