@@ -3,6 +3,12 @@ function save_password() {
     let password_about =document.getElementById("password-about").value;
 
     if (password != ""){
+        passwords_count = 0
+        for (el in Object.keys(localStorage)) {
+            passwords_count += 1;
+        }
+        localStorage.setItem(passwords_count + 1, `${password} | ${password_about}`);
+        
         if (password_about == "") {
             alert(`Пароль сохранен!\nПароль: ${password}\nОписание: Без описания`)
         } else {
@@ -11,13 +17,6 @@ function save_password() {
     } else {
         alert("Укажите пароль!")
     }
-
-    passwords_count = 0
-    for (el in Object.keys(localStorage)) {
-        passwords_count += 1;
-    }
-
-    localStorage.setItem(passwords_count + 1, `${password} | ${password_about}`);
 }
 
 function get_passwords() {
